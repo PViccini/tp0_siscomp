@@ -818,3 +818,196 @@ tp0_siscomp on  main [?] on ☁️  (us-east-1)
   46785 ?        00:00:00 kworker/u16:3-i915
   46850 pts/1    00:00:00 ps
 tp0_siscomp on  main [?] on ☁️  (us-east-1) 
+
+
+tp0_siscomp on  main [?] on ☁️  (us-east-1) took 10s 
+➜ ls
+copied_commands.txt  linux3.txt  my_file_renamed.sh
+linux2.txt           linux.txt   README.md
+tp0_siscomp on  main [?] on ☁️  (us-east-1) 
+➜ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	copied_commands.txt
+	linux.txt
+	linux2.txt
+	linux3.txt
+	my_file_renamed.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+tp0_siscomp on  main [?] on ☁️  (us-east-1) 
+➜ git checkout -b feature/test-git-branch
+Switched to a new branch 'feature/test-git-branch'
+tp0_siscomp on  feature/test-git-branch [?] on ☁️  (us-east-1) 
+➜ git add .
+tp0_siscomp on  feature/test-git-branch [+] on ☁️  (us-east-1) 
+➜ git commit -m "testing git commit and addign commands files"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'patricio@patricio-TUF-FX505GT.(none)')
+tp0_siscomp on  feature/test-git-branch [+] on ☁️  (us-east-1) 
+✖  git config -h
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+tp0_siscomp on  feature/test-git-branch [+] on ☁️  (us-east-1) 
+✖  git config --local user.name "Carlos Patricio Viccini"
+tp0_siscomp on  feature/test-git-branch [+] on ☁️  (us-east-1) 
+➜ git config --local user.email "carlos.patricio.viccini@mi.unc.edu.ar"
+tp0_siscomp on  feature/test-git-branch [+] on ☁️  (us-east-1) 
+➜ git config --global color.ui auto
+tp0_siscomp on  feature/test-git-branch [+] on ☁️  (us-east-1) 
+➜ git config --list
+includeid.gitdir:~/astro/*.path=~/.gitconfig-astro
+includeid.gitdir:~/Facultad/*.path=~/.gitconfig-unc
+credential.https://github.com.helper=
+credential.https://github.com.helper=!/usr/bin/gh auth git-credential
+credential.https://gist.github.com.helper=
+credential.https://gist.github.com.helper=!/usr/bin/gh auth git-credential
+credential.helper=!gh auth git-credential
+color.ui=auto
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/PViccini/tp0_siscomp.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+user.name=Carlos Patricio Viccini
+user.email=carlos.patricio.viccini@mi.unc.edu.ar
+tp0_siscomp on  feature/test-git-branch [+] on ☁️  (us-east-1) 
+➜ git commit -m "testing git commit and addign commands files"
+[feature/test-git-branch adfae44] testing git commit and addign commands files
+ 5 files changed, 826 insertions(+)
+ create mode 100644 copied_commands.txt
+ create mode 100644 linux.txt
+ create mode 100644 linux2.txt
+ create mode 100644 linux3.txt
+ create mode 100755 my_file_renamed.sh
+tp0_siscomp on  feature/test-git-branch on ☁️  (us-east-1) 
+➜ git push origin feature/test-git-branch
+^C⏎                                                                             tp0_siscomp on  feature/test-git-branch on ☁️  (us-east-1) took 4s 
+✖  git push origin feature/test-git-branch
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 9.61 KiB | 2.40 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'feature/test-git-branch' on GitHub by visiting:
+remote:      https://github.com/PViccini/tp0_siscomp/pull/new/feature/test-git-branch
+remote: 
+To https://github.com/PViccini/tp0_siscomp.git
+ * [new branch]      feature/test-git-branch -> feature/test-git-branch
+tp0_siscomp on  feature/test-git-branch on ☁️  (us-east-1) 
+➜ git show
+commit adfae44caf3e615a7a3a73ccd3fa80eb0c9b0551 (HEAD -> feature/test-git-branch, origin/feature/test-git-branch)
+Author: Carlos Patricio Viccini <carlos.patricio.viccini@mi.unc.edu.ar>
+Date:   Mon Mar 17 12:30:14 2025 -0300
+
+    testing git commit and addign commands files
+
+diff --git a/copied_commands.txt b/copied_commands.txt
+new file mode 100644
+index 0000000..595b504
+--- /dev/null
++++ b/copied_commands.txt
+@@ -0,0 +1,820 @@
++
++Facultad/SO2/2025 on ☁️  (us-east-1) 
++➜ gh auth switch --hostname github.com --user PViccini
++
++✓ Switched active account for github.com to PViccini
++Facultad/SO2/2025 on ☁️  (us-east-1) 
++➜ gh repo clone PViccini/tp0_siscomp
++Cloning into 'tp0_siscomp'...
++^C⏎                                                                             Facultad/SO2/2025 on ☁️  (us-east-1) took 41s 
++✖  ls
++soii-2021-ipc-PViccini
++Facultad/SO2/2025 on ☁️  (us-east-1) 
++➜ gh repo clone PViccini/tp0_siscomp
++Cloning into 'tp0_siscomp'...
++remote: Enumerating objects: 3, done.
++remote: Counting objects: 100% (3/3), done.
++remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
++Unpacking objects: 100% (3/3), 862 bytes | 862.00 KiB/s, done.
++Facultad/SO2/2025 on ☁️  (us-east-1) 
++➜ ls
++soii-2021-ipc-PViccini  tp0_siscomp
++Facultad/SO2/2025 on ☁️  (us-east-1) 
++➜ cd tp0_siscomp/
++tp0_siscomp on  main on ☁️  (us-east-1) 
++➜ ls
++README.md
++tp0_siscomp on  main on ☁️  (us-east-1) 
++➜ ls ../../
++2025            soii---2022---laboratorio-iii-pato98115.zip
++lab-1-example   soii---2022---laboratorio-iv-Ivoo25-main
++lab-1-example2  soii---2022---laboratorio-vi-jerebenitez-main.zip
++Practico        Teorico
++tp0_siscomp on  main on ☁️  (us-east-1) 
++➜ ls -l
++total 4
++-rw-rw-r-- 1 patricio patricio 13 mar 17 12:07 README.md
++tp0_siscomp on  main on ☁️  (us-east-1) 
++➜ ls -r
++README.md
++tp0_siscomp on  main on ☁️  (us-east-1) 
++➜ ls -lr
++total 4
++-rw-rw-r-- 1 patricio patricio 13 mar 17 12:07 README.md
++tp0_siscomp on  main on ☁️  (us-east-1) 
++➜ man ls
+tp0_siscomp on  feature/test-git-branch on ☁️  (us-east-1) took 6s 
